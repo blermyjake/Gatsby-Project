@@ -1,28 +1,60 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
-const SecondPage = () => (
-  <div className="home_container">
-    <div>
-      <h1>What</h1>
-      <p>Site-builder</p>
-      <p>Friendly to programers</p>
-      <h3>Why</h3>
-      <p>Control</p>
-      <p>Simplistic</p>
-      <p>Speed</p>
-      <h3>Plugins</h3>
-      <ul>
-        <li>Link</li>
-        <li>E-Commerce</li>
-        <li>Image Optimizer</li>
-      </ul>
-    </div>
-    <div className="bottom_links">
-      <Link className='links' to="/">Previous</Link>
-      <Link className='links' to="/page-3/">Next</Link>
-    </div>
-  </div>
-)
+import QuoteGenerator from '../components/QuoteGenerator'
+
+class SecondPage extends Component {
+  render() {
+    return (
+      <div className="home_container">
+        <div className="home_top">
+          <div className="holder">
+            <h2>What</h2>
+            <div className="hidden">
+              <p>Site-builder</p>
+              <p>Friendly to programers</p>
+            </div>
+          </div>
+
+          <div className="holder">
+            <h2>Why</h2>
+            <div className="hidden">
+              <p>Time Saver</p>
+              <p>Control</p>
+              <p>Simplistic</p>
+              <p>Speed</p>
+              <p>Great Documentation</p>
+            </div>
+          </div>
+
+          <div className="holder">
+            <h2>Plugins</h2>
+            <div className="hidden">
+              <p>Link</p>
+              <p>E-Commerce</p>
+              <p>Stripe</p>
+            </div>
+          </div>
+        </div>
+        <div className="quote">
+          <QuoteGenerator />
+        </div>
+
+        <div className="bottom_links">
+          <Link className="links" to="/">
+            <img className='arrow'src="https://image.flaticon.com/icons/svg/126/126492.svg" alt="Back"/>
+          </Link>
+          <Link className="links" to="/page-3/">
+          <img className='arrow'src="https://image.flaticon.com/icons/svg/118/118740.svg" alt="next"/>
+          </Link>
+        </div>
+      </div>
+    )
+  }
+}
+
+// const SecondPage = () => (
+
+// )
 
 export default SecondPage

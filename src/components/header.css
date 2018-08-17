@@ -1,6 +1,8 @@
 .header {
-    background: teal;
-    margin-bottom: 1.45rem;
+    /* background-color: rgb(118, 156, 156); */
+    background-image: url(https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+
+    height: 90px;
 }
 
 .sub_header {
@@ -12,7 +14,6 @@
     display: flex;
     align-items: center;
     height: 100%;
-    margin-left: 5%;
 }
 
 
@@ -20,9 +21,6 @@
     opacity: .7;
 }
 
-.header_img {
-    height: 60px;
-}
 
 @keyframes dropdownFade {
     0% {

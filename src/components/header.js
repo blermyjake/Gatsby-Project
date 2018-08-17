@@ -12,7 +12,6 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-    <img className='header_img' src="https://logos--turbio.repl.co/gatsbyjs.svg" alt=""/>
       <h1 className='header_title'>
         <Link
           to="/"
@@ -22,6 +21,7 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
+          
         </Link>
       </h1>
     </div>

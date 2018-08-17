@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 90px;
+    background: linear-gradient(to top, rgb(190, 190, 190) 0%, #fff 80%);
+}
+
+.footer p {
+    display: flex;
+    align-items: flex-end;
+}
